@@ -8,13 +8,21 @@
   "author": "rastiqdev <contact@rastiqdev.me>",
   "license": "GPL-3.0",
   "scripts": {
-    "build": "rm -rf dist && tsc"
+    "prettier": "prettier src --write",
+    "lint": "eslint src",
+    "test": "mocha -r dotenv/config",
+    "build": "npm run prettier && npm run lint && rm -rf dist && tsc"
   },
   "devDependencies": {
     "@types/node": "^20.12.2",
-    "typescript": "^5.4.3"
+    "eslint": "^8.57.0",
+    "mocha": "^10.4.0",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.3",
+    "typescript-eslint": "^7.4.0"
   },
   "dependencies": {
-    "discord.js": "^14.14.1"
+    "discord.js": "^14.14.1",
+    "dotenv": "^16.4.5"
   }
 }
