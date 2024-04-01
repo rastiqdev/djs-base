@@ -1,1 +1,1 @@
-console.log("hello :D");
+export * from "./func/createClient"
