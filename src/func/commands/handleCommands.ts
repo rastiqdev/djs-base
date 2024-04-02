@@ -1,15 +1,15 @@
-import { Events } from "discord.js";
-import { DJSClient } from "../types/DJSClient";
+import { Client, Collection, Events } from "discord.js";
 import { SlashCommand } from "../types/SlashCommand";
 
-export function handleCommands(client: DJSClient, commands: SlashCommand[]) {
+export function handleCommands(client: Client, commands: SlashCommand[]) {
+  const handledCommands = new Collection<string, SlashCommand>();
   commands.forEach((command) => {
-    client.commands.set(command.data.name, command);
+    handledCommands.set(command.data.name, command);
   });
 
   client.on(Events.InteractionCreate, async (interaction) => {
     if (!interaction.isChatInputCommand()) return;
-    const command = client.commands.get(interaction.commandName);
+    const command = handledCommands.get(interaction.commandName);
 
     if (!command) {
       console.error(
