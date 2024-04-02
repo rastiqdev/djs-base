@@ -1,9 +1,5 @@
 import { REST, Routes, SlashCommandBuilder } from "discord.js";
-
-export type SlashCommand = {
-  data: SlashCommandBuilder;
-  execute: void;
-};
+import { SlashCommand } from "../types/SlashCommand";
 
 export async function registerCommands(
   clientId: string,
