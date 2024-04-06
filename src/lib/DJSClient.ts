@@ -1,4 +1,4 @@
-import { Client, GatewayIntentBits } from "discord.js";
+import { Client } from "discord.js";
 import { registerCommands } from "./commands/registerCommands";
 import { DJSClientOptions } from "./types/ClientOptions";
 import { handleCommands } from "./commands/handleCommands";
