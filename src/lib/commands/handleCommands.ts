@@ -1,7 +1,8 @@
-import { Client, Collection, Events } from "discord.js";
+import { Collection, Events } from "discord.js";
+import { DJSClient } from "../DJSClient";
 import { SlashCommand } from "../types/SlashCommand";
 
-export function handleCommands(client: Client, commands: SlashCommand[]) {
+export function handleCommands(client: DJSClient, commands: SlashCommand[]) {
   const handledCommands = new Collection<string, SlashCommand>();
   commands.forEach((command) => {
     handledCommands.set(command.data.name, command);

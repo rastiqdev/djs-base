@@ -1,1 +1,1 @@
-export * from "./func/createClient";
+export * from "./lib/DJSClient";
