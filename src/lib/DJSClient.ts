@@ -12,11 +12,9 @@ export class DJSClient extends Client {
 
   private async init(options: DJSClientOptions) {
     if (options.commands !== undefined) await registerCommands(options);
-
-    const client = new Client({ intents: [GatewayIntentBits.Guilds] });
     if (options.events !== undefined) await handleEvents(this, options.events);
     if (options.commands !== undefined)
       await handleCommands(this, options.commands);
-    client.login(options.token);
+    this.login(options.token);
   }
 }
