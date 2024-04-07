@@ -1,0 +1,7 @@
+src
+test
+.env
+.env.EXAMPLE
+.prettierrc
+eslint.config.mjs
+tsconfig.json
