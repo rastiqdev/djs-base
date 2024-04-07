@@ -4,7 +4,10 @@
   "description": "An easy-to-use base for your discord.js projects",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "https://github.com/rastiqdev/djs-base.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rastiqdev/djs-base.git"
+  },
   "author": "rastiqdev <contact@rastiqdev.me>",
   "license": "GPL-3.0",
   "scripts": {
