@@ -27,4 +27,5 @@ const client = new DJSClient(
 A command file should look like this: https://github.com/discordjs/guide/blob/main/code-samples/creating-your-bot/event-handling/commands/utility/ping.js
 
 An event file should look like this: https://github.com/discordjs/guide/blob/main/code-samples/creating-your-bot/event-handling/events/ready.js
+
 (those examples are in CommonJS, make sure to convert them to ESM if you're on TypeScript)
