@@ -5,3 +5,4 @@ test
 .prettierrc
 eslint.config.mjs
 tsconfig.json
+README.md
