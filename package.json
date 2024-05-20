@@ -17,15 +17,14 @@
     "build": "npm run prettier && npm run lint && rm -rf dist && tsc"
   },
   "devDependencies": {
-    "@types/node": "^20.12.2",
+    "@types/node": "^20.12.12",
     "dotenv": "^16.4.5",
-    "eslint": "^8.57.0",
     "mocha": "^10.4.0",
     "prettier": "^3.2.5",
-    "typescript": "^5.4.3",
-    "typescript-eslint": "^7.4.0"
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.10.0"
   },
   "dependencies": {
-    "discord.js": "^14.14.1"
+    "discord.js": "^14.15.2"
   }
 }
