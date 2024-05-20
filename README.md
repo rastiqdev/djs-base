@@ -20,7 +20,7 @@ const client = new DJSClient(
   guildId: your_guildId,
   token: your_token,
   commands: [myCommand, myOtherCommand],
-  events: [myEvent],
+  events: [myEvent, myOtherEvent],
   intents: your_djs_intents
 );
 ```
